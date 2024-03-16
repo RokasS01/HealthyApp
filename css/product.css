@@ -1,0 +1,585 @@
+.create {
+    margin-top: 30px;
+}
+
+.create button {
+    width: 70px;
+    height: 35px;
+    background: var(--toggle-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--nav-color);
+    margin-bottom: 10px;
+}
+
+.create button i {
+    margin-right: 5px;
+}
+
+.tableau {
+    width: 100%;
+    display: flex;
+    background: var(--box3-color);
+    border-radius: 9px;
+    overflow-y: hidden;
+    padding: 20px;
+}
+
+.tableau .tableau-data{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 800px;
+}
+.tableau-data .title{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tableau-data .title .data-title{
+    font-size: 20px;
+    width: 150px;
+    font-weight: 500;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.tableau-data .data{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tableau-data .data:nth-child(2){
+    margin-top: 30px;
+}
+
+.tableau-data .data div{
+    font-size: 18px;
+    width: 150px;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+body.dark .tableau-data::-webkit-scrollbar-thumb:hover{
+    background: #3A3B3C;
+}
+
+.tableau .tableau-data div {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tableau .tableau-data .data .supprimer i{
+    color: #D32F2F;
+    border: 1px solid #D32F2F;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.tableau .tableau-data .data .modifier i {
+    color: #FFD700;
+    border: 1px solid #FFD700;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.tableau .tableau-data .supprimer .data-list:hover {
+    background-color: hsl(0, 65%, 51%, .1);
+}
+
+.tableau .tableau-data .data .modifier .data-list:hover {
+    background-color: hsl(122, 100%, 79%,.1);
+}
+
+.tableau .tableau-data .data .activite .in button {
+    color: #FFD700;
+    background: none;
+    border: 1px solid #FFD700;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tableau .tableau-data .data .activite .ac button{
+    color: #4CAF50;
+    background: none;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tableau .tableau-data .data .activite .in button:hover {
+    background: hsl(51, 100%, 50%,.1);
+}
+
+.tableau .tableau-data .data .activite .ac button:hover {
+    background: hsl(122, 39%, 49%, .1);
+}
+
+.tableau .tableau-data .image .data-list {
+    width: 100px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tableau .tableau-data .image .data-list img{
+    width: 100%;
+}
+
+
+@media (max-width: 1500px) {
+    .tableau .tableau-data{
+        overflow-X: scroll;
+    }
+}
+
+/*******************************/
+
+.back {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0,.6);
+    z-index: 100;
+    display: none;
+}
+
+.page-suppr {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--nav-color);
+    width: 90%; /* Utilisation de 90% de la largeur de l'écran */
+    max-width: 340px; /* Largeur maximale pour limiter la taille sur de plus grands écrans */
+    height: 200px;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
+}
+  
+  
+.page-suppr h1{
+    font-size: 18px;
+    color: var(--toggle-color);
+    
+}
+
+.page-suppr p {
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-color);
+}
+
+.page-suppr .button {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    transition: var(--tran-03);
+}
+
+.page-suppr .button button {
+    width: 40%;
+    height: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--tran-03);
+}
+
+.page-suppr .button .cancelButton {
+    color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+}
+
+.page-suppr .button .confirmButton {
+    background-color: var(--toggle-color);
+    color: var(--nav-color);
+    border: none;
+    border-radius: 5px;
+}
+
+.page-inactif, .page-update {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--nav-color);
+    width: 90%; /* Utilisation de 90% de la largeur de l'écran */
+    max-width: 340px; /* Largeur maximale pour limiter la taille sur de plus grands écrans */
+    height: 200px;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
+}
+  
+  
+.page-inactif h1, .page-update h1{
+    font-size: 18px;
+    color: var(--toggle-color);
+    
+}
+
+.page-inactif p, .page-update p {
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-color);
+}
+
+.page-inactif .button, .page-update .button {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    transition: var(--tran-03);
+}
+
+.page-inactif .button button, .page-update .button button{
+    width: 40%;
+    height: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--tran-03);
+}
+
+.page-inactif .button .cancelButton, .page-update .button .cancelButton {
+    color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+}
+
+.page-inactif .button .confirmButton, .page-update .button .confirmButton {
+    background-color: var(--toggle-color);
+    color: var(--nav-color);
+    border: none;
+    border-radius: 5px;
+}
+/* 
+.page-ajouter {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--nav-color);
+    width: 90%;
+    max-width: 340px; 
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+  
+.page-ajouter form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+
+}
+  
+.page-ajouter form .fusion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 40%;
+
+}
+  
+.page-ajouter h1{
+    font-size: 18px;
+    color: var(--toggle-color);  
+}
+
+.page-ajouter form .fusion h2 {
+    font-size: 12px;
+    color: var(--text-color);
+    margin-bottom: -20px;
+    margin-left: -100px;
+}
+
+.page-ajouter form p {
+    text-align: center;
+    font-size: 10px;
+    color: var(--text-color);
+}
+
+.page-ajouter form .button {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    transition: var(--tran-03);
+    margin-top: 20px;
+}
+
+.page-ajouter form .button button {
+    width: 40%;
+    height: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--tran-03);
+}
+
+.page-ajouter form .button .cancelButton {
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+}
+
+.page-ajouter form .button .confirmButton {
+    background-color: var(--toggle-color);
+    color: #E0E0E0;
+    border: none;
+    border-radius: 5px;
+} */
+
+.search-box{
+    position: relative;
+    height: 30px;
+    max-width: 200px;
+    width: 100%;
+    left: 0%;
+    transform: translateX(-50%);
+}
+.search-box input{
+    position: absolute;
+    border: 1px solid var(--border-color);
+    background-color: var(--panel-color);
+    padding: 0 25px 0 50px;
+    border-radius: 3px;
+    height: 100%;
+    width: 100%;
+    color: var(--text-color);
+    font-weight: 400;
+    outline: none;
+}
+.search-box i{
+    position: absolute;
+    left: 115px;
+    font-size: 16px;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--black-light-color);
+}
+
+.page-argent, .page-ajouter {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--nav-color);
+    width: 90%; 
+    max-width: 340px; 
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+  
+.page-argent form, .page-ajouter form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+}
+  
+.page-argent h1, .page-ajouter h1{
+    font-size: 18px;
+    color: var(--toggle-color);  
+}
+
+.page-argent h2, .page-ajouter h2 {
+    font-size: 12px;
+    color: var(--text-color);
+    margin-left: -100px;
+    margin-top: 20px;
+}
+
+.page-argent form p, .page-ajouter form p {
+    text-align: center;
+    font-size: 10px;
+    color: var(--text-color);
+}
+
+.page-argent form .button, .page-ajouter form .button {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.2s ease-in-out;
+    margin-top: 20px;
+}
+
+.page-argent form .button button, .page-ajouter form .button button {
+    width: 40%;
+    height: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    border: none;
+}
+
+.page-argent form .button .cancelButton, .page-ajouter form .button .cancelButton {
+    color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+}
+
+.page-argent form .button .confirmButton, .page-ajouter form .button .confirmButton {
+    background-color: var(--toggle-color);
+    color: var(--nav-color);
+    border: none;
+    border-radius: 5px;
+}
+
+.tableau .tableau-data .supprimer .openModalSupprBlocked {
+    color: #727272;
+    text-align: center;
+    border: 1px solid #727272;
+    border-radius: 5px;
+    transition: 0.1s ease-in-out;
+    width: 30px;
+}
+
+.tableau .tableau-data .supprimer .openModalSupprBlocked:hover {
+    background-color: hsl(0, 0%, 45%,.2);
+}
+
+.fonds span {
+    transition: .3s ease-in-out;
+}
+
+.fonds span:hover {
+    cursor: pointer;
+    color: #fff1a0;
+}
+
+.back > div form .file-box {
+    position: relative; /* Pour positionner l'icône par rapport à ce conteneur */
+    border: 1px solid var(--border-color);
+    background-color: var(--panel-color);
+    font-size: 12px;
+    width: 200px;
+    height: 30px;
+}
+
+.back > div form .file-box label {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.selected-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    font-size: 20px;
+    color: var(--toggle-color);
+    transform: translateY(-50%);
+    display: none; /* Caché par défaut */
+    /* Ajoutez votre icône ou flèche personnalisée */
+}
+
+.file-selected .selected-icon {
+    display: block; /* Afficher lorsque le fichier est sélectionné */
+}
+
+
+/************************************************/
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  }
+  
+  .loader-wrapper .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
+    border: 2px solid var(--background-color);
+    border-radius: 50%;
+    float: left;
+    margin: 0 5px;
+    transform: scale(0);
+    animation: fx 1000ms ease infinite 0ms;
+  }
+  .dot:nth-child(2) {
+    animation: fx 1000ms ease infinite 300ms;
+  }
+  .dot:nth-child(3) {
+    animation: fx 1000ms ease infinite 600ms;
+  }
+  @keyframes fx {
+    50% {
+        transform: scale(1);
+        opacity: 1;
+   }
+    100% {
+        opacity: 0;
+   }
+  }

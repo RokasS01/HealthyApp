@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <title>XPLORA - Welcome</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="icon" href="../img/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="../img/logo.png" alt="Logo">
+            </div>
+            <span class="logo_name">
+                DASHBOARD
+            </span>
+        </div>
+    
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a class="aMenu" href="#mainSection">
+                    <i class='bx bxs-dashboard'></i>
+                    <span class="link-name">Main</span>
+                </a></li>
+                <li><a class="aMenu" href="#productSection">
+                    <i class='bx bx-list-ul'></i>
+                    <span class="link-name">Product</span>
+                </a></li>
+                <li><a class="aMenu" href="#">
+                    <i class='bx bx-planet' ></i>
+                    <span class="link-name">Popular</span>
+                </a></li>
+                <li><a class="aMenu" href="#">
+                    <i class='bx bx-user-circle'></i>
+                    <span class="link-name">Admin Login</span>
+                </a></li>
+            </ul>
+
+    
+            <ul class="logout-mode">
+                <li>
+                    <a href="../index.html">
+                        <i class='bx bx-log-out'></i>
+                        <span class="link-name">Se déconnecter</span>
+                    </a>
+                </li>
+                
+                <li class="mode">
+                    <a href="#">
+                        <i class='bx bx-moon' ></i>
+                        <span class="link-name">Thème nuit</span>
+                    </a>
+    
+                    <div class="mode-toggle">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+<section class="dashboard">
+
+    <div class="top">
+        <i class='bx bx-menu'></i>
+    </div>
+
+    <div class="dash-content" id="mainSection">
+        <div class="overview">
+            <div class="title">
+                <i class='bx bx-info-circle'></i>
+                <span class="text">Information</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="blocks">
+        <div class="block compte">
+            <h1>Ventes cette année</h1>
+            <h2>324 545 €</h2>
+            <p><span class="pos">10 %</span>&nbsp;depuis le mois dernier</p>
+            <div class="wave"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#BB86FC" fill-opacity="1" d="M0,160L21.8,181.3C43.6,203,87,245,131,224C174.5,203,218,117,262,74.7C305.5,32,349,32,393,37.3C436.4,43,480,53,524,74.7C567.3,96,611,128,655,160C698.2,192,742,224,785,240C829.1,256,873,256,916,234.7C960,213,1004,171,1047,176C1090.9,181,1135,235,1178,256C1221.8,277,1265,267,1309,229.3C1352.7,192,1396,128,1418,96L1440,64L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"></path></svg></div>
+        </div>
+        <div class="block livretA">
+            <h1>Ventes ce mois</h1>
+            <h2>14 643 €</h2>
+            <p><span class="neg">-13 %</span>&nbsp;depuis le mois dernier</p>
+            <div class="wave"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#03DAC5" fill-opacity="1" d="M0,0L21.8,42.7C43.6,85,87,171,131,197.3C174.5,224,218,192,262,197.3C305.5,203,349,245,393,218.7C436.4,192,480,96,524,85.3C567.3,75,611,149,655,176C698.2,203,742,181,785,192C829.1,203,873,245,916,229.3C960,213,1004,139,1047,138.7C1090.9,139,1135,213,1178,208C1221.8,203,1265,117,1309,101.3C1352.7,85,1396,139,1418,165.3L1440,192L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"></path></svg></div>
+        </div>
+        <div class="block livretJeune">
+            <h1>Produit le plus vendu</h1>
+            <h2>4 245 €</h2>
+            <p><span class="null">0 %</span>&nbsp;depuis le mois dernier</p>
+            <div class="wave"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#448AFF" fill-opacity="1" d="M0,288L21.8,266.7C43.6,245,87,203,131,160C174.5,117,218,75,262,74.7C305.5,75,349,117,393,133.3C436.4,149,480,139,524,160C567.3,181,611,235,655,234.7C698.2,235,742,181,785,186.7C829.1,192,873,256,916,245.3C960,235,1004,149,1047,144C1090.9,139,1135,213,1178,245.3C1221.8,277,1265,267,1309,240C1352.7,213,1396,171,1418,149.3L1440,128L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"></path></svg></div>
+        </div>
+    </div>
+
+    <div class="canvas">
+        <div class="courbeCompte">
+            <h1>Map</h1>
+            <div id="map"></div>
+        </div>
+
+        <div class="donutCompte">
+            <h1>Beignet</h1>
+            <canvas id="myDonut"></canvas>
+        </div>
+
+        <div class="traitCompte">
+            <h1>Bar</h1>
+            <canvas id="myTrait"></canvas>
+        </div>
+    </div>
+
+    <div class="dash-content" id="productSection">
+        <div class="overview">
+            <div class="title">
+                <i class='bx bx-customize'></i>
+                <span class="text">Product</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="create">
+        <button class="openModalCreate"><i class='bx bxs-add-to-queue'></i>Créer</button>
+    </div>
+
+    <div class="tableau">
+        <div class="tableau-data">
+            <div class="title">
+                <span class="data-title">Image</span>
+                <span class="data-title">Nom</span>
+                <span class="data-title">Prix</span>
+                <span class="data-title">Ajout</span>
+                <span class="data-title">Activité</span>
+                <span class="data-title">Modifier</span>
+                <span class="data-title">Supprimer</span>
+            </div>
+
+            <div class="data">
+                <div class="image">
+                    <span class="data-list"><img src="../img/plat.png"></span>
+                </div>
+                <div class="nom">
+                    <span class="data-list">Plat Healthy</span>
+                </div>
+                <div class="prix">
+                    <span class="data-list">€23.99</span>
+                </div>
+                <div class="ajout">
+                    <span class="data-list">14-02-2024</span>
+                </div>
+                <div class="activite">
+                    <div class="data-list ac openModalInac"><button>Actif</button></div>
+                </div>
+
+                <div class="modifier">
+                    <span class="data-list openModalEdit"><i class='bx bx-edit'></i></span>
+                </div>
+                <div class="supprimer">
+                    <span class="data-list openModalSuppr"><i class='bx bx-trash' ></i></span>
+                </div>
+            </div>
+
+            <div class="data">
+                <div class="image">
+                    <span class="data-list"><img src="../img/plat.png"></span>
+                </div>
+                <div class="nom">
+                    <span class="data-list">Plat Healthy</span>
+                </div>
+                <div class="prix">
+                    <span class="data-list">€23.99</span>
+                </div>
+                <div class="ajout">
+                    <span class="data-list">14-02-2024</span>
+                </div>
+                <div class="activite">
+                    <div class="data-list ac openModalInac"><button>Actif</button></div>
+                </div>
+
+                <div class="modifier">
+                    <span class="data-list openModalEdit"><i class='bx bx-edit'></i></span>
+                </div>
+                <div class="supprimer">
+                    <span class="data-list openModalSuppr"><i class='bx bx-trash' ></i></span>
+                </div>
+            </div>
+
+            <div class="data">
+                <div class="image">
+                    <span class="data-list"><img src="../img/plat.png"></span>
+                </div>
+                <div class="nom">
+                    <span class="data-list">Plat Healthy</span>
+                </div>
+                <div class="prix">
+                    <span class="data-list">€23.99</span>
+                </div>
+                <div class="ajout">
+                    <span class="data-list">14-02-2024</span>
+                </div>
+                <div class="activite">
+                    <div class="data-list ac openModalInac"><button>Actif</button></div>
+                </div>
+
+                <div class="modifier">
+                    <span class="data-list openModalEdit"><i class='bx bx-edit'></i></span>
+                </div>
+                <div class="supprimer">
+                    <span class="data-list openModalSuppr"><i class='bx bx-trash' ></i></span>
+                </div>
+            </div>
+
+            <div class="data">
+                <div class="image">
+                    <span class="data-list"><img src="../img/plat.png"></span>
+                </div>
+                <div class="nom">
+                    <span class="data-list">Plat Healthy</span>
+                </div>
+                <div class="prix">
+                    <span class="data-list">€23.99</span>
+                </div>
+                <div class="ajout">
+                    <span class="data-list">14-02-2024</span>
+                </div>
+                <div class="activite">
+                    <div class="data-list ac openModalInac"><button>Actif</button></div>
+                </div>
+
+                <div class="modifier">
+                    <span class="data-list openModalEdit"><i class='bx bx-edit'></i></span>
+                </div>
+                <div class="supprimer">
+                    <span class="data-list openModalSuppr"><i class='bx bx-trash' ></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+<div class="back" id="modal">
+
+    <div class="page-inactif">
+        <h1>Confirmez-vous le changement ?</h1>
+        <p>Si vous confirmez, votre compte sera mis à jour automatiquement</p>
+        <form class="button" action="../php/requete.php" method="post" >
+            <input type="hidden" name="confInac" value="" id="inputInac">
+            <button type="submit" class="confirmButton">Je confirme</button>
+            <button type="button" class="cancelButton">Annuler</button>
+        </form>
+    </div>
+
+    <div class="page-update">
+        <h1>Confirmez-vous le changement ?</h1>
+        <p>Si vous confirmez, votre compte sera mis à jour automatiquement</p>
+        <form class="button" action="../php/requete.php" method="post" >
+            <input type="hidden" name="confUpdate">
+            <button type="submit" class="confirmButton">Je confirme</button>
+            <button type="button" class="cancelButton">Annuler</button>
+        </form>
+    </div>
+
+    <div class="page-suppr">
+        <h1>Confirmez-vous la suppression ?</h1>
+        <p>Si vous confirmez, votre compte sera définitivement effacé</p>
+        <form class="button" action="../php/requete.php" method="post" >
+            <input type="hidden" name="confSuppr" value="" id="inputSuppr">
+            <button type="submit" class="confirmButton">Je confirme</button>
+            <button type="button" class="cancelButton">Annuler</button>
+        </form>
+    </div>
+    
+    <div class="page-ajouter">
+        <h1>Modifier un produit</h1>
+        <form action="../php/requete.php" method="post">
+            <h2>Nom du compte</h2>
+            <div class="search-box">
+                <i class='bx bx-search' ></i>
+                <input name="nom_compte" id="nom_compte" type="text" placeholder="Nom du produit ici ..." required>
+            </div>
+            <h2>Prix du produit</h2>
+            <div class="search-box">
+                <i class='bx bx-search' ></i>
+                <input name="somme_depart" id="somme_depart" type="text" placeholder="Prix du produit ici ..." required>
+            </div>
+            <h2>Nouvelle Image</h2>
+            <div class="file-box">
+                <label for="img-prod-1">Parcourir une image ...</label>
+                <input type="file" class ="img-prod" id="img-prod-1" name="img-prod" accept="image/png, image/jpg" hidden>
+                <span class="selected-icon"><i class='bx bx-check'></i></span>
+            </div>
+            
+            <div class="button">
+                <button type="submit" class="confirmButton">Je confirme</button>
+                <button type="button" class="cancelButton">Annuler</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="page-argent">
+        <h1>Ajout d'un nouveau produit</h1>
+        <form action="../php/requete.php" method="post">
+            <h2>Nom du compte</h2>
+            <div class="search-box">
+                <i class='bx bx-search' ></i>
+                <input name="nom_compte" id="nom_compte" type="text" placeholder="Nom du produit ici ..." required>
+            </div>
+            <h2>Prix du produit</h2>
+            <div class="search-box">
+                <i class='bx bx-search' ></i>
+                <input name="somme_depart" id="somme_depart" type="text" placeholder="Prix du produit ici ..." required>
+            </div>
+            <h2>Nouvelle Image</h2>
+            <div class="file-box">
+                <label for="img-prod-2">Parcourir une image ...</label>
+                <input type="file" class ="img-prod" id="img-prod-2" name="img-prod" accept="image/png, image/jpg" hidden>
+                <span class="selected-icon"><i class='bx bx-check'></i></span>
+            </div>
+            <div class="button">
+                <button type="submit" class="confirmButton">Je confirme</button>
+                <button type="button" class="cancelButton">Annuler</button>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+</section>
+
+
+<div class="loader-wrapper">
+    <div class="container">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+</div>
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+
+<script>
+    var map = L.map('map').setView([0, 0], 2); // Vue mondiale
+  
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+    }).addTo(map);
+  
+    // Exemple de données sur les ventes
+    var salesData = [
+      { location: [48.866, 0.333], intensity: 10 }
+      // Ajoute d'autres données ici
+    ];
+  
+    // Ajoute des marqueurs sur la carte pour chaque emplacement
+    salesData.forEach(function(data) {
+      var marker = L.circleMarker(data.location, {
+        radius: data.intensity,
+        color: 'blue',
+        fillColor: 'blue',
+        fillOpacity: 0.5
+      }).addTo(map);
+    });
+  </script>
+
+
+<script>
+
+    /*----------------------------------------------------*/
+    
+    const PourColor = [
+        '#02C667','#FF6F61','#F9C74F', '#F9C74F ', '#448AFF', '#FFD700', '#32CD32',
+        '#FF6347', '#8A2BE2', '#00FFFF', '#FFA500', '#808080',
+        '#FF1493', '#00CED1', '#FF4500', '#800080', '#00FF00',
+        '#FF00FF', '#008000', '#FFFF00', '#D2691E'
+    ];
+    
+    function capitalizeFirstLetter(string) {
+        return string.charAt(0).toUpperCase() + string.slice(1);
+    }
+    
+    function getMonthNames(startMonth) {
+        const months = [];
+        const date = new Date();
+        
+        for (let i = startMonth - 1; i < startMonth + 11; i++) {
+            date.setMonth(i % 12);
+            const monthName = new Intl.DateTimeFormat('fr-FR', { month: 'long' }).format(date);
+            months.push(capitalizeFirstLetter(monthName));
+        }
+        return months;
+    }
+    
+    const startingMonth = 2; // Par exemple, pour commencer par octobre, utilisez 10 pour octobre
+    
+    const monthLabels = getMonthNames(startingMonth);
+    
+    const dataCourbe = {
+        labels: monthLabels,
+        datasets: [
+            {
+                label: 'Année',
+                data: [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160],
+                borderColor: PourColor[0],
+                tension: 0.3,
+            },
+            {
+                label: 'Mois',
+                data: [60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170],
+                borderColor: PourColor[1],
+                tension: 0.3,
+            }
+            // Ajoutez d'autres enregistrements ici si nécessaire
+        ]
+    };
+    
+    // const optionsCourbe = {
+    //     responsive: false,
+    //     plugins: {
+    //         legend: {
+    //             display: false
+    //         }
+    //     },
+    //     scales: {
+    //         y: {
+    //             ticks: {
+    //                 callback: function(value) {
+    //                     return value + ' €';
+    //                 },
+    //                 stepSize: 20, // Définit l'intervalle entre chaque graduation
+    //                 min: 0, // Définit la valeur minimale sur l'axe y
+    //                 max: 600 // Définit la valeur maximale sur l'axe y
+    //             }
+    //         }
+    //     }
+    // };
+    
+    
+    // const courbe = document.getElementById('myCourbe');
+    
+    // new Chart(courbe, {
+    //     type: 'line',
+    //     data: dataCourbe,
+    //     options: optionsCourbe
+    // });
+    
+    /*----------------------------------------------------*/
+    
+    const donut = document.getElementById('myDonut');
+    const PourLabels = ['Healthy', 'Vegan', 'Accessoires']; // Exemple de noms de compte
+    const PourData = [8980, 3972, 1691]; // Exemple de données de compte
+    
+    const dataDonut = {
+        labels: PourLabels,
+        datasets: [
+            {
+                label: 'Ventes € ',
+                data: PourData,
+                backgroundColor: PourColor,
+                borderWidth: 1,
+                tension: 0.2,
+            }
+        ]
+    };
+    
+    const optionsDonut = {
+        responsive: true,
+        plugins: {
+            legend: {
+                display: false
+            }
+        },
+    };
+    
+    new Chart(donut, {
+        type: 'doughnut',
+        data: dataDonut,
+        options: optionsDonut
+    });
+    
+    /*----------------------------------------------------*/
+    
+    const trait = document.getElementById('myTrait');
+    
+    const dataTrait = {
+        labels: PourLabels,
+        datasets: [
+            {
+                label: 'Ventes €',
+                data: PourData,
+                backgroundColor: PourColor,
+                borderWidth: 1,
+                tension: 0.2,
+            }
+        ]
+    };
+    
+    const optionsTrait = {
+        responsive: true,
+        scales: {
+            x: {
+                display: false, // Masque l'axe x
+            },
+            y: {
+                ticks: {
+                    callback: function(value) {
+                        return value + ' €';
+                    }
+                }
+            }
+        },
+        plugins: {
+            legend: {
+                display: false,
+            },
+        },
+    };
+    
+    new Chart(trait, {
+        type: 'bar',
+        data: dataTrait,
+        options: optionsTrait,
+    });
+    
+    </script>
+
+
+<script src="../js/admin.js"></script>
+</html>
