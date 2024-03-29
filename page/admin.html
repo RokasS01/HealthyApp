@@ -34,11 +34,7 @@
                     <i class='bx bx-list-ul'></i>
                     <span class="link-name">Product</span>
                 </a></li>
-                <li><a class="aMenu" href="#">
-                    <i class='bx bx-planet' ></i>
-                    <span class="link-name">Popular</span>
-                </a></li>
-                <li><a class="aMenu" href="#">
+                <li><a class="aMenu" href="#adminloginSection">
                     <i class='bx bx-user-circle'></i>
                     <span class="link-name">Admin Login</span>
                 </a></li>
@@ -248,6 +244,143 @@
         </div>
     </div>
 
+    <div class="dash-content" id="adminloginSection">
+        <div class="overview">
+            <div class="title">
+                <i class='bx bx-customize'></i>
+                <span class="text">Admin Login</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="create">
+        <button class="openModalAddCompte"><i class='bx bxs-add-to-queue'></i>Add</button>
+    </div>
+
+
+    <div class="tableau">
+        <div class="tableau-data">
+            <div class="title">
+                <span class="data-title">Pseudo</span>
+                <span class="data-title">Email</span>
+                <span class="data-title">Mot de passe</span>
+                <span class="data-title">Ajout</span>
+                <span class="data-title">Modifier</span>
+                <span class="data-title">Supprimer</span>
+            </div>
+    
+            <div class="data">
+                <div class="image">
+                    <span class="data-list">RokasS</span>
+                </div>
+                <div class="nom">
+                    <span class="data-list">rokass@gmail.com</span>
+                </div>
+                <div class="prix">
+                    <span class="data-list">2f776...</span>
+                </div>
+                <div class="ajout">
+                    <span class="data-list">10-01-2019</span>
+                </div>
+    
+                <div class="modifier">
+                    <span class="data-list openModalEditCompte"><i class='bx bx-edit'></i></span>
+                </div>
+                <div class="supprimer">
+                    <span class="data-list openModalSuppr"><i class='bx bx-trash' ></i></span>
+                </div>
+            </div>
+
+            <div class="data">
+                <div class="image">
+                    <span class="data-list">RokasS</span>
+                </div>
+                <div class="nom">
+                    <span class="data-list">rokass@gmail.com</span>
+                </div>
+                <div class="prix">
+                    <span class="data-list">2f776...</span>
+                </div>
+                <div class="ajout">
+                    <span class="data-list">10-01-2019</span>
+                </div>
+    
+                <div class="modifier">
+                    <span class="data-list openModalEditCompte"><i class='bx bx-edit'></i></span>
+                </div>
+                <div class="supprimer">
+                    <span class="data-list openModalSuppr"><i class='bx bx-trash' ></i></span>
+                </div>
+            </div>
+
+            <div class="data">
+                <div class="image">
+                    <span class="data-list">RokasS</span>
+                </div>
+                <div class="nom">
+                    <span class="data-list">rokass@gmail.com</span>
+                </div>
+                <div class="prix">
+                    <span class="data-list">2f776...</span>
+                </div>
+                <div class="ajout">
+                    <span class="data-list">10-01-2019</span>
+                </div>
+    
+                <div class="modifier">
+                    <span class="data-list openModalEditCompte"><i class='bx bx-edit'></i></span>
+                </div>
+                <div class="supprimer">
+                    <span class="data-list openModalSuppr"><i class='bx bx-trash' ></i></span>
+                </div>
+            </div>
+
+            <div class="data">
+                <div class="image">
+                    <span class="data-list">RokasS</span>
+                </div>
+                <div class="nom">
+                    <span class="data-list">rokass@gmail.com</span>
+                </div>
+                <div class="prix">
+                    <span class="data-list">2f776...</span>
+                </div>
+                <div class="ajout">
+                    <span class="data-list">10-01-2019</span>
+                </div>
+    
+                <div class="modifier">
+                    <span class="data-list openModalEditCompte"><i class='bx bx-edit'></i></span>
+                </div>
+                <div class="supprimer">
+                    <span class="data-list openModalSuppr"><i class='bx bx-trash' ></i></span>
+                </div>
+            </div>
+
+            <div class="data">
+                <div class="image">
+                    <span class="data-list">RokasS</span>
+                </div>
+                <div class="nom">
+                    <span class="data-list">rokass@gmail.com</span>
+                </div>
+                <div class="prix">
+                    <span class="data-list">2f776...</span>
+                </div>
+                <div class="ajout">
+                    <span class="data-list">10-01-2019</span>
+                </div>
+    
+                <div class="modifier">
+                    <span class="data-list openModalEditCompte"><i class='bx bx-edit'></i></span>
+                </div>
+                <div class="supprimer">
+                    <span class="data-list openModalSuppr"><i class='bx bx-trash' ></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </section>
 
 
@@ -337,9 +470,67 @@
         </form>
     </div>
 
+    <div class="page-compte">
+        <h1>Ajouter un compte</h1>
+        <form action="../php/requete.php" method="post">
+            <h2>Pseudo</h2>
+            <div class="search-box">
+                <i class='bx bx-search' ></i>
+                <input name="nom_compte" id="nom_compte" type="text" placeholder="Pseudo du compte ici ..." required>
+            </div>
+            <h2>Email</h2>
+            <div class="search-box">
+                <i class='bx bx-search' ></i>
+                <input name="somme_depart" id="somme_depart" type="text" placeholder="Addresse mail ici ..." required>
+            </div>
+            <h2>Mot de passe</h2>
+            <div class="search-box">
+                <i class='bx bx-search' ></i>
+                <input name="somme_depart" id="somme_depart" type="text" placeholder="Mot de passe ici ..." required>
+            </div>
+            
+            <div class="button">
+                <button type="submit" class="confirmButton">Je confirme</button>
+                <button type="button" class="cancelButton">Annuler</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="page-edit-compte">
+        <h1>Modifier le compte</h1>
+        <form action="../php/requete.php" method="post">
+            <h2>Nouveau pseudo</h2>
+            <div class="search-box">
+                <i class='bx bx-search' ></i>
+                <input name="nom_compte" id="nom_compte" type="text" placeholder="Pseudo du compte ici ..." required>
+            </div>
+            <h2>Nouvelle Email</h2>
+            <div class="search-box">
+                <i class='bx bx-search' ></i>
+                <input name="somme_depart" id="somme_depart" type="text" placeholder="Addresse mail ici ..." required>
+            </div>
+            <h2>Nouveau mot de passe</h2>
+            <div class="search-box">
+                <i class='bx bx-search' ></i>
+                <input name="somme_depart" id="somme_depart" type="text" placeholder="Mot de passe ici ..." required>
+            </div>
+            
+            <div class="button">
+                <button type="submit" class="confirmButton">Je confirme</button>
+                <button type="button" class="cancelButton">Annuler</button>
+            </div>
+        </form>
+    </div>
+
 </div>
 
+
+
+
+
 </section>
+
+
 
 
 <div class="loader-wrapper">
@@ -355,193 +546,5 @@
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-
-
-<script>
-    var map = L.map('map').setView([0, 0], 2); // Vue mondiale
-  
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
-    }).addTo(map);
-  
-    // Exemple de données sur les ventes
-    var salesData = [
-      { location: [48.866, 0.333], intensity: 10 }
-      // Ajoute d'autres données ici
-    ];
-  
-    // Ajoute des marqueurs sur la carte pour chaque emplacement
-    salesData.forEach(function(data) {
-      var marker = L.circleMarker(data.location, {
-        radius: data.intensity,
-        color: 'blue',
-        fillColor: 'blue',
-        fillOpacity: 0.5
-      }).addTo(map);
-    });
-  </script>
-
-
-<script>
-
-    /*----------------------------------------------------*/
-    
-    const PourColor = [
-        '#02C667','#FF6F61','#F9C74F', '#F9C74F ', '#448AFF', '#FFD700', '#32CD32',
-        '#FF6347', '#8A2BE2', '#00FFFF', '#FFA500', '#808080',
-        '#FF1493', '#00CED1', '#FF4500', '#800080', '#00FF00',
-        '#FF00FF', '#008000', '#FFFF00', '#D2691E'
-    ];
-    
-    function capitalizeFirstLetter(string) {
-        return string.charAt(0).toUpperCase() + string.slice(1);
-    }
-    
-    function getMonthNames(startMonth) {
-        const months = [];
-        const date = new Date();
-        
-        for (let i = startMonth - 1; i < startMonth + 11; i++) {
-            date.setMonth(i % 12);
-            const monthName = new Intl.DateTimeFormat('fr-FR', { month: 'long' }).format(date);
-            months.push(capitalizeFirstLetter(monthName));
-        }
-        return months;
-    }
-    
-    const startingMonth = 2; // Par exemple, pour commencer par octobre, utilisez 10 pour octobre
-    
-    const monthLabels = getMonthNames(startingMonth);
-    
-    const dataCourbe = {
-        labels: monthLabels,
-        datasets: [
-            {
-                label: 'Année',
-                data: [50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160],
-                borderColor: PourColor[0],
-                tension: 0.3,
-            },
-            {
-                label: 'Mois',
-                data: [60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170],
-                borderColor: PourColor[1],
-                tension: 0.3,
-            }
-            // Ajoutez d'autres enregistrements ici si nécessaire
-        ]
-    };
-    
-    // const optionsCourbe = {
-    //     responsive: false,
-    //     plugins: {
-    //         legend: {
-    //             display: false
-    //         }
-    //     },
-    //     scales: {
-    //         y: {
-    //             ticks: {
-    //                 callback: function(value) {
-    //                     return value + ' €';
-    //                 },
-    //                 stepSize: 20, // Définit l'intervalle entre chaque graduation
-    //                 min: 0, // Définit la valeur minimale sur l'axe y
-    //                 max: 600 // Définit la valeur maximale sur l'axe y
-    //             }
-    //         }
-    //     }
-    // };
-    
-    
-    // const courbe = document.getElementById('myCourbe');
-    
-    // new Chart(courbe, {
-    //     type: 'line',
-    //     data: dataCourbe,
-    //     options: optionsCourbe
-    // });
-    
-    /*----------------------------------------------------*/
-    
-    const donut = document.getElementById('myDonut');
-    const PourLabels = ['Healthy', 'Vegan', 'Accessoires']; // Exemple de noms de compte
-    const PourData = [8980, 3972, 1691]; // Exemple de données de compte
-    
-    const dataDonut = {
-        labels: PourLabels,
-        datasets: [
-            {
-                label: 'Ventes € ',
-                data: PourData,
-                backgroundColor: PourColor,
-                borderWidth: 1,
-                tension: 0.2,
-            }
-        ]
-    };
-    
-    const optionsDonut = {
-        responsive: true,
-        plugins: {
-            legend: {
-                display: false
-            }
-        },
-    };
-    
-    new Chart(donut, {
-        type: 'doughnut',
-        data: dataDonut,
-        options: optionsDonut
-    });
-    
-    /*----------------------------------------------------*/
-    
-    const trait = document.getElementById('myTrait');
-    
-    const dataTrait = {
-        labels: PourLabels,
-        datasets: [
-            {
-                label: 'Ventes €',
-                data: PourData,
-                backgroundColor: PourColor,
-                borderWidth: 1,
-                tension: 0.2,
-            }
-        ]
-    };
-    
-    const optionsTrait = {
-        responsive: true,
-        scales: {
-            x: {
-                display: false, // Masque l'axe x
-            },
-            y: {
-                ticks: {
-                    callback: function(value) {
-                        return value + ' €';
-                    }
-                }
-            }
-        },
-        plugins: {
-            legend: {
-                display: false,
-            },
-        },
-    };
-    
-    new Chart(trait, {
-        type: 'bar',
-        data: dataTrait,
-        options: optionsTrait,
-    });
-    
-    </script>
-
-
 <script src="../js/admin.js"></script>
 </html>

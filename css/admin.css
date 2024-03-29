@@ -355,7 +355,7 @@ nav.close ~ .dashboard .top{
         width: 100%;
     }
     nav.close ~ .dashboard .top{
-        left: 0;
+        left: 80px;
         width: 100%;
     }
 }
@@ -656,8 +656,8 @@ nav.close ~ .dashboard .top{
         flex-direction: column;
     }
     .blocks .block h2 {
-        margin-top: 50px;
-        font-size: 40px;
+        margin-top: 70px;
+        font-size: 20px;
     }
     .blocks .block p {
         display: none;

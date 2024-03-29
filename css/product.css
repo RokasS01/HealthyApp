@@ -403,7 +403,7 @@ body.dark .tableau-data::-webkit-scrollbar-thumb:hover{
     color: var(--black-light-color);
 }
 
-.page-argent, .page-ajouter {
+.page-argent, .page-ajouter, .page-compte, .page-edit-compte {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -424,7 +424,7 @@ body.dark .tableau-data::-webkit-scrollbar-thumb:hover{
     padding-bottom: 20px;
 }
   
-.page-argent form, .page-ajouter form {
+.page-argent form, .page-ajouter form, .page-compte form, .page-edit-compte form{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -433,25 +433,25 @@ body.dark .tableau-data::-webkit-scrollbar-thumb:hover{
 
 }
   
-.page-argent h1, .page-ajouter h1{
+.page-argent h1, .page-ajouter h1, .page-compte h1, .page-edit-compte h1{
     font-size: 18px;
     color: var(--toggle-color);  
 }
 
-.page-argent h2, .page-ajouter h2 {
+.page-argent h2, .page-ajouter h2, .page-compte h2, .page-edit-compte h2{
     font-size: 12px;
     color: var(--text-color);
     margin-left: -100px;
     margin-top: 20px;
 }
 
-.page-argent form p, .page-ajouter form p {
+.page-argent form p, .page-ajouter form p, .page-compte form p, .page-edit-compte form p{
     text-align: center;
     font-size: 10px;
     color: var(--text-color);
 }
 
-.page-argent form .button, .page-ajouter form .button {
+.page-argent form .button, .page-ajouter form .button, .page-compte form .button, .page-edit-compte form .button{
     width: 80%;
     display: flex;
     justify-content: space-between;
@@ -459,7 +459,7 @@ body.dark .tableau-data::-webkit-scrollbar-thumb:hover{
     margin-top: 20px;
 }
 
-.page-argent form .button button, .page-ajouter form .button button {
+.page-argent form .button button, .page-ajouter form .button button, .page-compte form .button button, .page-edit-compte form .button button {
     width: 40%;
     height: 30px;
     font-weight: 700;
@@ -468,13 +468,13 @@ body.dark .tableau-data::-webkit-scrollbar-thumb:hover{
     border: none;
 }
 
-.page-argent form .button .cancelButton, .page-ajouter form .button .cancelButton {
+.page-argent form .button .cancelButton, .page-ajouter form .button .cancelButton, .page-compte form .button .cancelButton, .page-edit-compte form .button .cancelButton{
     color: var(--primary-color);
     border: none;
     border-radius: 5px;
 }
 
-.page-argent form .button .confirmButton, .page-ajouter form .button .confirmButton {
+.page-argent form .button .confirmButton, .page-ajouter form .button .confirmButton, .page-compte form .button .confirmButton, .page-edit-compte form .button .confirmButton {
     background-color: var(--toggle-color);
     color: var(--nav-color);
     border: none;
